@@ -1,0 +1,185 @@
+﻿
+<style>
+    
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* Style the header */
+    header {
+        background-color: darkseagreen;
+        padding: 20px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+        float: left;
+        width: 30%;
+        height: 300px; 
+        background: #ccc;
+        padding: 20px;
+    }
+
+        /* Style the list inside the menu */
+        nav ul {
+            list-style-type: none;
+            padding: 15;
+        }
+
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #f1f1f1;
+        height: 300px; /* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+        background-color: darkslategrey;
+        padding: 10px;
+        text-align: center;
+        color: white;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    media (max-width: 600px) {
+        nav, article
+
+    {
+        width: 100%;
+        height: auto;
+    }
+    }
+</style>
+
+<body>
+
+    
+    <header>
+        <h2>Gallery</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Bahria Project</a></li>
+                <li><a href="#">Islamabad Project</a></li>
+                <li><a href="#">Lahore Project</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            
+                <h3>Image Gallery</h3>
+                
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="~/images/pic1.jpg">
+                            <img src="~/images/pic1.jpg" alt="Cinque Terre" width="600" height="300">
+                        </a>
+                        <div class="desc">Add a description of the image here</div>
+                    </div>
+                </div>
+
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="~/images/pic2.jpg">
+                            <img src="~/images/pic2.jpg" alt="Forest" width="600" height="250">
+                        </a>
+                        <div class="desc">Add a description of the image here</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="~/images/pic3.jpg">
+                            <img src="~/images/pic3.jpg" alt="Northern Lights" width="400" height="200">
+                        </a>
+                        <div class="desc">Add a description of the image here</div>
+                    </div>
+                </div>
+
+                <div class="responsive">
+                    <div class="gallery">
+                        <a target="_blank" href="~/images/img1.png">
+                            <img src="~/images/img1.png" alt="Mountains" width="600" height="400">
+                        </a>
+                        <div class="desc">Add a description of the image here</div>
+                    </div>
+                </div>
+
+                
+
+            
+        </article>
+    </section>
+
+    <footer>
+        <p>Our Finist Works</p>
+    </footer>
+
+</body>
+

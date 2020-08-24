@@ -1,0 +1,152 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+<head>
+    <title>Basic 90</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/layout.css" type="text/css">
+    <!--[if lt IE 9]><script src="scripts/html5shiv.js"></script><![endif]-->
+</head>
+<style>
+    .column11 {
+        float: left;
+        width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row11:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .pic5{
+       width: 90%;
+         }
+    a.Login {
+        background: url(../Images/image.gif) no-repeat top left;
+        display: block;
+        width: 150px;
+        height: 150px;
+        text-indent: -9999px; /* hides the link text */
+    }    
+    
+</style>
+
+<body>
+    <div class="wrapper row1" >
+        <header id="header" class="clear">
+            <div id="hgroup">
+                <h1><a href="#">Hombey</a></h1>
+                <h2>Construction Website</h2>
+            </div>
+            <form action="#" method="post">
+                <fieldset>
+
+                    @Html.ActionLink("Login", "Login", "Account",null, new { @class = "btn btn-primary btn-lg" })
+                    <p></p>
+                    @Html.ActionLink("SignUp", "SignUp", "Account")
+                </fieldset>
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    @Html.ActionLink("About", "About", "Account", null, new { @class = "btn btn-primary btn-lg" })
+                    <li><a href="#">Contact</a></li>
+                    @Html.ActionLink("Gallery", "Gallery", "Account")
+                    <li class="last"><a href="#">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- content -->
+    <div class="wrapper row2">
+        <div id="container" class="clear">
+            <!-- Slider -->
+            <section id="slider" class="clear">
+                <figure>
+                    <img src="~/images/pic5.jpg" name="pic5" alt="">
+                    <div class="row11">
+                        <div class="column11">
+                            <figcaption>
+                                <h2>About</h2>
+                                <p>This is a platform where dream home could are constructed.</p>
+                                <footer class="more"><a href="#">Read More &raquo;</a></footer>
+                            </figcaption>
+                        </div>
+                        <div class="column11">
+                            <figcaption>
+                                <h2>Contact</h2>
+                                <p>Feel free to contact us for any quries</p>
+                                <footer class="more"><a href="">Read More &raquo;</a></footer>
+                            </figcaption>
+                        </div>
+                    </div>
+                </figure>
+            </section>
+            <!-- main content -->
+            <div id="intro">
+                <section class="clear">
+                    <!-- article 1 -->
+                    <article class="two_quarter">
+                        <h2>Projects</h2>
+                        <p>Our Projects under development</p>
+                        <p>Our Successful Projects</a>.</p>
+                    </article>
+                    <!-- article 2 -->
+                    <article class="two_quarter lastbox">
+                        <figure>
+                            <ul class="clear">
+                                <li><a href="#"><img src="~/images/pic1.jpg" width="130" height="130" alt=""></a></li>
+                                <li><a href="#"><img src="~/images/pic2.jpg" width="130" height="130" alt=""></a></li>
+                                <li class="last"><a href="#"><img src="~/images/pic3.jpg" width="130" height="130" alt=""></a></li>
+                            </ul>
+                            <figcaption><a href="#">View Our Image Gallery Here &raquo;</a></figcaption>
+                        </figure>
+                    </article>
+                </section>
+            </div>
+            <!-- ########################################################################################## -->
+            <!-- ########################################################################################## -->
+            <!-- ########################################################################################## -->
+            <!-- ########################################################################################## -->
+            <div id="homepage" class="last clear">
+                <section class="one_quarter">
+                    <h2 class="title">From Contact</h2>
+                    <article>
+                        <header>
+                            <h2>Info</h2>
+                            <address>
+                                <a href="#">Admin</a>, usama.mehmood@gmail.com
+                            </address>
+                            <time datetime="2020-08-24">Monday, 6<sup>th</sup> August 2020</time>
+                        </header>
+                        <p>Comsats University</p>
+                        <footer class="more"><a href="#">Read More &raquo;</a></footer>
+                    </article>
+                </section>
+                <section class="one_quarter">
+                    <h2 class="title">Quick Links</h2>
+                    <nav>
+                        <ul>
+                            <li><a href="#">New Projects</a></li>
+                            <li><a href="#">Recent Projects</a></li>
+                            <li><a href="#">Upcoming Projects</a></li>
+                            <li class="last"><a href="#">Previous Project</a></li>
+                        </ul>
+                    </nav>
+                </section>
+                <section class="two_quarter lastbox">
+                    <h2 class="title">About US</h2>
+                    <img class="imgl" src="~/images/pic4.jpg" width="130" height="130" alt="">
+                    <p>We create the finist houses with our best effort to make your dreams come true</p>
+                    <footer class="more"><a href="#">Read More &raquo;</a></footer>
+                </section>
+            </div>
+            <!-- / content body -->
+        </div>
+    </div>
+    <!-- Footer -->
+    
+</body>
